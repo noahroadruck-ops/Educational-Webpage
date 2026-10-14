@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #f2f4f7;
+    background-color: #dfe6f1;
     text-align: center;
     padding: 20px;
 }
@@ -20,14 +20,91 @@ h3 {
 
 p {
     font-size: 18px;
+    margin-bottom: 12px;
     text-align: center;
 
 }
+
+ul, ol {
+    text-align: left;
+    margin: 8px;
+    padding: 0 0 0 25px;
+}
+
+        
 
 img {
     width: 50%;
     border-radius: 10px;
     display: block;
-    margin: auto;
+    margin: 50px auto 30px;
 
+}
+
+
+/*ID's*/
+
+#main_footer {
+    background-color: #1148be;
+    text-align: center;
+    padding: 20px;
+}
+
+#page1_content,
+#page2_content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Colored borders for each */
+#history { border-top: 5px solid #3a5ea8; }
+#early_achievements { border-top: 5px solid #f4b942; }
+#reusable { border-top: 5px solid #3a5ea8; }
+#dragon { border-top: 5px solid #f4b942; }
+#starship { border-top: 5px solid #3a5ea8; }
+
+
+/* Styling for cards */
+.card  {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card p {
+
+    text-align: left;
+    
+}
+
+.card h2 {
+    text-align: left;    
+}
+
+.subheader {
+    color: #3a5ea8;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for links */
+.footer-link a {
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Flexbox layout for content wrapper */
+#content_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#content_wrapper .card {
+    flex: 1 1 300px;
 }
