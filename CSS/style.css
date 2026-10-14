@@ -108,3 +108,42 @@ img {
 #content_wrapper .card {
     flex: 1 1 300px;
 }
+
+
+/* Media query for smaller screens */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 { 
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+    /* Adjust padding for content sections */
+    #page1_content,
+    #page2_content {
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+    }
+    /*stacks cards in a vertical column*/
+    #content_wrapper {
+        flex-direction: column;
+    }
+    /* controls height for content */
+    #content_wrapper .card {
+        flex: none;
+    }
+    /* Adjust image size for small screens */
+    img {
+        width: 90%
+    }
+
+}
