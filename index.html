@@ -2,25 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>History of SpaceX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<link rel="stylesheet" href="./css/style.css" />
 
 
-<html>
-
-    <head>
-        <title>History of SpaceX</title>
-    </head>
+<
 
     <body>
         <!--Header shows the Title.-->
 
-        <header id="main_page_header">
+        <header id="main_page_header" class="text-center py-4">
             <h1>History of SpaceX</h1>
             <p>The history of SpaceX and their goals.</p>
         </header>
@@ -29,32 +25,41 @@
 
         <!--Main content goes here-->
 
-        <div id="content_wrapper">
+        <div id="content_wrapper" class="container my-4">
 
-            <section id="history" class="card">
-                 <h2>History</h2>
-                <p>SpaceX, or Space Exploration Technologies Corp., was founded in 2002 by ELon musk. The companies goal was to make space transportation affordable and one day establishg humans as a multiplanetary species.</p>
-                <p>SpaceX began designing their first rocket called falcon 1. At first, they failed several times until in 2008, falcon 1 reached orbit for the first time. This was the first privately developed liquic fueled rocket to reach orbit.</p>
-            </section>
-    
-    
+            <div class="row g-4"> 
+                <div class="col-md-6">
+                    <section id="history" class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">History</h2>
+                            <p class="card-text">SpaceX, or Space Exploration Technologies Corp., was founded in 2002 by Elon Musk. The company's goal was to make space transportation affordable and one day establish humans as a multiplanetary species.</p>
+                            <p class="card-text">SpaceX began designing their first rocket called Falcon 1. At first, they failed several times until in 2008, Falcon 1 reached orbit for the first time. This was the first privately developed liquid-fueled rocket to reach orbit.</p>
+                        </div>
+                    </section>
+                </div>
+
             <!--Early Achievements-->
-            <section id="early_achievements" class="card">
-                <h2>Early Achievements</h2>
-                <p>SpaceX continued to develop larger rockets and spacecraft after their sucess with falcon 1. The falcon 9 launched in 2010, and their first spacecraft was the "Dragon" which is used to reach the International Space Station.</p>
-                <p> The Dragon spacecraft helped establish a direct partnership with NASA, as they regulary use the Dragon spacecraft for cargo missions and to return back to Earth.</p>
 
-                <!--Unordered list for milestones-->
+            <div class=""col-md-6">
+                <section id="early_achievements" class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Early Achievements</h2>
+                        <p class="card-text">SpaceX continued to develop larger rockets and spacecraft after their success with Falcon 1. The Falcon 9 launched in 2010, and their first spacecraft was the "Dragon" which is used to reach the International Space Station.</p>
+                        <p class="card-text">The Dragon spacecraft helped establish a direct partnership with NASA, as they regularly use the Dragon spacecraft for cargo missions and to return back to Earth.</p>
 
-                <h3 class="subheader">Early Milestones</h3>
-                <ul>
-                    <li>2002- SpaceX founded</li>
-                    <li>2008- Falcon 1 reaches orbit</li>
-                    <li>2010- Falcon 9 launches</li>
-                    <li>2012- Dragon spacecraft docks with ISS</li>
-                </ul>
-            </section>
+                        <!--Unordered list for milestones-->
 
+                        <h3 class="subheader">Early Milestones</h3>
+                        <ul>
+                            <li>2002- SpaceX founded</li>
+                            <li>2008- Falcon 1 reaches orbit</li>
+                            <li>2010- Falcon 9 launches</li>
+                            <li>2012- Dragon spacecraft docks with ISS</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
 
             
 
@@ -63,14 +68,19 @@
             </div>
 
             <img src="./Images/Falcon_9.jpg" alt="SpaceX Falcon 9 rocket on launch pad at night">
-
+            <div class="row mt-4">
+                <div class="col-12">
+                    <img src="./Images/SpaceX_Factory.jpg" class="img-fluid rounded d-block mx-auto" alt="SpaceX factory with rockets and spacecrafts">
+                </div>
+            </div>
+        </div>
         </main>
 
             <!--Footer-->
 
-            <footer id="main_footer">
+            <footer id="main_footer" class=""text-center py-4">
                 <nav>
-                    <p class="footer-link"><a href="page2.html">Go to page 2: SpaceX's Future Plans</a></p>
+                    <p class="footer-link"><a href="page2.html"> class="btn btn-primary">Go to page 2: SpaceX's Future Plans</a></p>
                 </nav>
             </footer>
     
