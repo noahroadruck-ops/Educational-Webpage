@@ -1,61 +1,42 @@
-* {font-family: 'Arial', sans-serif; margin: 0; padding: 0; box-sizing: border-box;}
+
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #909090;
-    font-size: 16px;
     line-height: 1.6;
     color: #333;
 }
 
-header {
-    background-color: #dfe6f1;
-    text-align: center;
-    padding: 20px;
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-h3 {
-    font-size: 30px;
-    text-align: center;
+h1 {
+    color: #1148be;
+    letter-spacing: 1px;
 }
 
 p {
     font-size: 18px;
-    margin-bottom: 12px;
-    text-align: center;
 
 }
 
-ul, ol {
-    text-align: left;
-    margin: 8px;
-    padding: 0 0 0 25px;
-}
-
-        
-
+    
 img {
     width: 50%;
-    border-radius: 10px;
-    display: block;
-    margin: 50px auto 30px;
-
 }
 
+header {
+    background-color: #dfe6f1
+}
 
 /*ID's*/
 
 #main_footer {
     background-color: #1148be;
-    text-align: center;
-    padding: 20px;
+    
 }
 
-#page1_content,
-#page2_content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
 /* Colored borders for each */
 #history { border-top: 5px solid #3a5ea8; }
 #early_achievements { border-top: 5px solid #f4b942; }
@@ -65,48 +46,33 @@ img {
 
 
 /* Styling for cards */
-.card  {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: left;
-}
 
-.card p {
-
-    text-align: left;
-    
-}
-
-.card h2 {
-    text-align: left;    
-}
 
 .subheader {
     color: #3a5ea8;
     font-weight: bold;
     font-size: 24px;
-    text-align: left;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-/* Styling for links */
-.footer-link a {
-    color: rgb(249, 249, 249);
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* Flexbox layout for content wrapper */
-#content_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.footer-link {
+    margin: 0;
 }
 
-#content_wrapper .card {
-    flex: 1 1 300px;
+.footer-link btn {
+    --bs-btn-color: #1a1a1a;
+    --bs-btn-bg: #f4b942;
+    --bs-btn-border-color: #f4b942;
+    --bs-btn-hover-color: #1148be;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #ffffff;
+    --bs-btn-active-border-color: #ffffff;
+    font-weight: bold;
+
 }
 
 
@@ -126,21 +92,7 @@ img {
         font-size: 16px;
     }
     /* Adjust padding for content sections */
-    #page1_content,
-    #page2_content {
-        padding: 10px;
-    }
-    .card {
-        padding: 15px;
-    }
-    /*stacks cards in a vertical column*/
-    #content_wrapper {
-        flex-direction: column;
-    }
-    /* controls height for content */
-    #content_wrapper .card {
-        flex: none;
-    }
+
     /* Adjust image size for small screens */
     img {
         width: 90%
